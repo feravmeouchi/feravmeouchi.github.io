@@ -1,0 +1,24 @@
+ 
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"Ethiopia GDP Growth",
+    "subtitle": ["QoQ4 % Growth", "Source: ONS via ECO-API", "Chart by: Fernanda Avendaño"]
+  },
+
+  "width": 700,
+  "height": 400,
+
+  "data": {"url": "https://api.economicsobservatory.com/eth/grow?vega"},
+
+  "mark": {
+    "type": "line",
+    "color": "purple"},
+
+  "encoding": {
+    "x": {"field": "date", "type": "temporal"},
+    "y": {"field": "value", "type": "quantitative", "title":null}
+  }
+}
+ 
